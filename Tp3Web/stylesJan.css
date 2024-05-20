@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+}
+header a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+}
+main {
+    padding: 20px;
+    text-align: center;
+    top: 50%;
+}
+.logo {
+    width: 5%;
+    height: 10%;
+    position:absolute;
+    left: 48%;
+    top: 10%;
+    overflow:hidden;
+    margin: auto;
+
+}
+#liens {
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+.button-modifier{
+    background: #bd6f08;
+  border-radius: 0px 0px 0px 0px;
+  width: 5%;
+  height: 5%;
+  position: absolute;
+  left: 22%;
+  top: 40%;
+  overflow: hidden;
+}
+.button-supprimer {
+    background: #bd6f08;
+  border-radius: 0px 0px 0px 0px;
+  width: 5%;
+  height: 5%;
+  position: absolute;
+  right: 50%;
+  top: 40%;
+  overflow: hidden;
+}
+.button-partager {
+    background: #bd6f08;
+    border-radius: 0px 0px 0px 0px;
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    overflow: hidden;
+}
+.button-terminer {
+    background: #bd6f08;
+    border-radius: 0px 0px 0px 0px;
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
