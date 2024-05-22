@@ -5,52 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Gestion des tâches</title>
     <link rel="stylesheet" href="stylesJan.css">
+</head>
+<body>
     <header class="header">
         <nav>
-            <section id = "liens">
+            <section id="liens">
                 <a href="index.html"> Connexion</a>
                 <a href="accueil.html">Accueil</a>
                 <a href="liste.html">Listes</a>
-                 </section>
+            </section>
         </nav>
     </header>
-    <img class = "logo" src="./TP3-images/list-logo.png" alt="Logo du site">
-</head>
-<body>
+
     <main>
         <section class="tâches">
             <h3>Tâches</h3>
-            <div id="conteneur de tâches">
-                <div class="élément de tâche">
-                    <span class="Nom-tâche">nom de la tâche</span>
-                    <button class="button-terminer">Tâche terminer</button>
-                    <button class="button-modifier">Modifier la tâche</button>
-                    <button class="button-supprimer">Supprimer la tâche</button>
-                </div>
+            <div id="list-container">
+                <input type="text" id="item-input" placeholder="Entrez la tache">
+                <button id="add-button"> </button> Ajouter</button>
+                <ul id="item-list"></ul>
             </div>
-        </section>
-
-        <section class="nouvelle-tâche">
-            <h3>Ajouter une nouvelle tâche</h3>
-            <form id="ajout-tâche">
-                <label for="Nom-tâche">Nom de la tâche :</label>
-                <input type="text" id="Nom-tâche" name="tâche-nom" required>
-                
-                <label for="description-tâche">Description :</label>
-                <input type="texte" id="description-tâche" name="description-tâche">
-                
-                <label for="date-tâche">Date d'échéance :</label>
-                <input type="date" id="date-tâche" name="date-tâche">
-                
-                <button type="effectuer">Ajouter la tâche</button>
-            </form>
         </section>
     </main>
 
     <footer>
-       
         <p>Fait par Jan et Ibrahim pour TP3 au Cegep Bois-de-Boulogne </p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
