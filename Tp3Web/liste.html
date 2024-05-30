@@ -1,42 +1,36 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listes de Tâches</title>
+    <title>Liste des tâches</title>
     <link rel="stylesheet" href="stylesJan.css">
-    <header class="header">
-        <nav>
-            <section id = "liens">
-                <a href="index.html"> Connexion</a>
-                <a href="accueil.html">Accueil</a>
-                <a href="liste.html">Listes</a>
-                 </section>
-        </nav>
-    </header>
-    <img class = "logo" src="./TP3-images/list-logo.png" alt="Logo du site">
 </head>
 <body>
-<main>
-    <div class="opération-liste">
-        <h2>La liste des Tâches</h2>
-        <button class="button-modifier">Modifier la liste</button>
-        <button class="button-supprimer">Supprimer la liste</button>
-        <button class="button-partager">Partager la liste</button>
+    <header class="header">
+        <nav>
+            <section id="liens">
+                <a href="index.html">Connexion</a>
+                <a href="accueil.html">Accueil</a>
+                <a href="liste.html">Listes</a>
+            </section>
+        </nav>
+    </header>
 
-        <div class="nouveau-liste">
-            <h2>Créer une nouvelle liste de tâches</h2>
-            <form id="créer-liste">
-                <label for="liste-nom">Nom de la liste :</label>
-                <input type="texte" id="list-nom" name="list-nom" required>
-                <button type="submit">Créer la liste</button>
-            </form>
-        </div>
-    </div>
-</main>
+    <main>
+        <section class="tâches">
+            <h3>Liste des tâches</h3>
+            <ul id="task-list"></ul>
+            <button id="back-button">Ajouter plus de tâches</button>
+            <button id="reset-button">Réinitialiser la liste</button>
+        </section>
+    </main>
 
+    <footer>
+        <p>Fait par Jan et Ibrahim pour TP3 au Cegep Bois-de-Boulogne</p>
+    </footer>
+
+    <script src="voirlist.js"></script>
 </body>
-<footer>
-    <p> Fait par Jan et Ibrahim pour TP3 au Cegep Bois-de-Boulogne</p>
-</footer>
 </html>
