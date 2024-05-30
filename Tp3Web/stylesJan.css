@@ -3,80 +3,77 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
 
 header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-}
-header a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 10px;
-}
-main {
-    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    top: 50%;
+    width: 100%;
 }
-.logo {
-    width: 5%;
-    height: 10%;
-    position:absolute;
-    left: 48%;
-    top: 10%;
-    overflow:hidden;
-    margin: auto;
 
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
 }
-#liens {
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    border-radius: 15px;
-    max-width: 400px;
-    margin: auto;
+    width: 100%;
+    flex: 1;
 }
-.button-modifier{
-    background: #bd6f08;
-  border-radius: 0px 0px 0px 0px;
-  width: 5%;
-  height: 5%;
-  position: absolute;
-  left: 22%;
-  top: 40%;
-  overflow: hidden;
+
+#list-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.button-supprimer {
-    background: #bd6f08;
-  border-radius: 0px 0px 0px 0px;
-  width: 5%;
-  height: 5%;
-  position: absolute;
-  right: 50%;
-  top: 40%;
-  overflow: hidden;
+
+#item-input {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
-.button-partager {
-    background: #bd6f08;
-    border-radius: 0px 0px 0px 0px;
-    width: 5%;
-    height: 5%;
-    position: absolute;
-    right: 20%;
-    top: 40%;
-    overflow: hidden;
+
+#add-button {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    background-color: #007BFF;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
 }
-.button-terminer {
-    background: #bd6f08;
-    border-radius: 0px 0px 0px 0px;
-    width: 5%;
-    height: 5%;
-    position: absolute;
-    right: 20%;
-    top: 40%;
-    overflow: hidden;
+
+#item-list {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#item-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 15px; 
 }
 
 footer {
@@ -84,9 +81,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 footer p {
